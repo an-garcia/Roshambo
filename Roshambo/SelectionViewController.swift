@@ -26,6 +26,20 @@ class SelectionViewController: UIViewController {
         let controller = segue.destination as! ResultViewController
         controller.selectionValue = randomValue()
     }
+    
+    // Call the ResultsViewController
+    @IBAction func callResults() {
+        
+        // Get the ResultsViewController
+        let controller: ResultViewController
+        controller = storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
+        
+        // Set the two values to random numbers from 1 to 6
+        controller.selectionValue = randomValue()
+        
+        // Present the view Controller
+        present(controller, animated: true, completion: nil)
+    }
 
 
 }

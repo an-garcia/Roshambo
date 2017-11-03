@@ -49,6 +49,9 @@
                                 <rect key="frame" x="150" y="334" width="75" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="scissors"/>
+                                <connections>
+                                    <action selector="callResults" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y4p-im-bdZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -62,7 +65,7 @@
         <!--Result View Controller-->
         <scene sceneID="MxH-hP-zzC">
             <objects>
-                <viewController id="Ij5-TG-v6y" customClass="ResultViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultViewController" id="Ij5-TG-v6y" customClass="ResultViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mbB-h7-a78">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
