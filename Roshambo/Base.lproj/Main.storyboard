@@ -36,6 +36,9 @@
                                 <rect key="frame" x="150" y="180" width="75" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="paper"/>
+                                <connections>
+                                    <segue destination="Ij5-TG-v6y" kind="modal" identifier="processGame" id="8bd-bB-Q0Q"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gjp-ub-R93">
                                 <rect key="frame" x="150" y="253" width="75" height="65"/>
@@ -68,6 +71,9 @@
                                 <rect key="frame" x="149" y="431" width="77" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Return"/>
+                                <connections>
+                                    <action selector="dismiss" destination="Ij5-TG-v6y" eventType="touchUpInside" id="MUJ-8L-fxX"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PaperCoversRock" translatesAutoresizingMaskIntoConstraints="NO" id="sk3-vm-uw1">
                                 <rect key="frame" x="67" y="113" width="240" height="128"/>
@@ -91,6 +97,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="kGK-S0-mUX"/>
                     </view>
+                    <connections>
+                        <outlet property="labelMessage" destination="JuU-wb-64A" id="DpR-P8-qGq"/>
+                        <outlet property="labelTitle" destination="iqh-cG-Ke1" id="0QQ-Yr-Cl9"/>
+                        <outlet property="resultImage" destination="sk3-vm-uw1" id="e9a-LN-lfy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qi7-vf-PRZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

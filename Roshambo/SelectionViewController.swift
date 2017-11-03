@@ -9,15 +9,22 @@
 import UIKit
 
 class SelectionViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    /**
+     * Randomly generates a Int from 1 to 6
+     */
+    func randomValue() -> Int {
+        // Generate a random Int32 using arc4Random
+        let randomValue = 1 + arc4random() % 3
+        
+        // Return a more convenient Int, initialized with the random value
+        return Int(randomValue)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // Prepare for launch a segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let controller = segue.destination as! ResultViewController
+        controller.selectionValue = randomValue()
     }
 
 
