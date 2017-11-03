@@ -40,6 +40,10 @@ class SelectionViewController: UIViewController {
         // Present the view Controller
         present(controller, animated: true, completion: nil)
     }
+    
+    @IBAction func callResultsUsingCodeAndStoryBoard() {
+        performSegue(withIdentifier: "callResultsUsingCodeAndStoryBoard", sender: self)
+    }
 
 
 }

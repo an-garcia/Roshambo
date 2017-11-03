@@ -37,13 +37,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="paper"/>
                                 <connections>
-                                    <segue destination="Ij5-TG-v6y" kind="modal" identifier="processGame" id="8bd-bB-Q0Q"/>
+                                    <segue destination="Ij5-TG-v6y" kind="modal" identifier="" id="8bd-bB-Q0Q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gjp-ub-R93">
                                 <rect key="frame" x="150" y="253" width="75" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="rock"/>
+                                <connections>
+                                    <action selector="callResultsUsingCodeAndStoryBoard" destination="BYZ-38-t0r" eventType="touchUpInside" id="nBu-fx-3Ru"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tig-gZ-xiD">
                                 <rect key="frame" x="150" y="334" width="75" height="65"/>
@@ -57,6 +60,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="Ij5-TG-v6y" kind="modal" identifier="callResultsUsingCodeAndStoryBoard" id="ZdH-Ix-QmS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,4 +123,7 @@
         <image name="rock" width="75" height="65"/>
         <image name="scissors" width="75" height="65"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZdH-Ix-QmS"/>
+    </inferredMetricsTieBreakers>
 </document>
