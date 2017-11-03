@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SelectionViewController.swift
 //  Roshambo
 //
 //  Created by xengar on 2017-11-03.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SelectionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
