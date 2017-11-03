@@ -1,7 +1,7 @@
 # Roshambo
 
 
-![Scheme](/screenshots/SimulatorScreenShot-iPhone8Plus-2017-10-01at20.16.40x.png)
+![Scheme](/screenshots/SimulatorScreenShot-iPhone8Plus-2017-11-03at12.37.47.png)
 
 
 Roshambo is an iOS sample application that plays rock, paper, scissors.
